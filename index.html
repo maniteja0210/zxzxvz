@@ -1,0 +1,245 @@
+<!--  -->
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:300,400,500,600,700&family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PawCare — Premium Dog Care Services</title>
+  <meta name="description" content="PawCare: Professional dog walking, grooming, training, and boarding with love. Full-width responsive design.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config to enable custom font families
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
+            serif: ['Merriweather', 'serif']
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 700ms ease-out both'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Ensure body uses the chosen font */
+    body { font-family: Poppins, Helvetica, Arial, sans-serif; }
+  </style>
+</head>
+<body style="font-family: 'Merriweather', sans-serif;" class="bg-gray-50 text-gray-800 leading-relaxed">
+  <!-- Navigation -->
+  <header class="w-full max-w-none bg-white shadow-sm sticky top-0 z-40">
+    <div class="w-full max-w-none mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-amber-300 flex items-center justify-center text-white font-bold">PC</div>
+        <div class="hidden sm:block">
+          <h1 class="text-lg font-semibold">PawCare</h1>
+          <p class="text-xs text-gray-500 -mt-1">Love. Care. Trust.</p>
+        </div>
+      </a>
+      <nav class="flex items-center gap-4">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-sm font-medium text-gray-700 hover:text-amber-500 transition">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-sm font-medium text-gray-700 hover:text-amber-500 transition">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-sm font-medium text-gray-700 hover:text-amber-500 transition">Contact</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="ml-2 inline-block px-4 py-2 bg-amber-500 text-white rounded-md text-sm font-semibold hover:shadow-lg transition-transform transform hover:-translate-y-0.5">Book a Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (full width image) -->
+  <main class="w-full max-w-none">
+    <section class="w-full max-w-none relative">
+      <img src="https://images.pexels.com/photos/3641193/pexels-photo-3641193.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Happy golden retriever running in park" class="w-full h-80 md:h-[520px] object-cover">
+      <div class="absolute inset-0 bg-black/25 flex items-center">
+        <div class="w-full px-6 md:px-16 lg:px-24 text-white">
+          <div class="max-w-none w-full">
+            <h2 class="text-3xl md:text-5xl font-bold leading-tight animate-fade-in-up">PawCare — Where Your Dog Feels at Home</h2>
+            <p class="mt-4 text-sm md:text-lg max-w-none w-full">Professional dog walking, grooming, training and boarding with certified caregivers and daily photo updates.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="px-5 py-3 bg-amber-500 text-white rounded-md font-semibold hover:bg-amber-600 transition">Book a Service</a>
+              <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="px-5 py-3 border border-white/30 text-white rounded-md hover:bg-white/10 transition">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Features (full width cards) -->
+    <section class="w-full max-w-none px-6 md:px-12 lg:px-24 py-12">
+      <h3 class="text-2xl font-semibold">Our Services</h3>
+      <p class="text-gray-600 mt-2">Tailored care plans for puppies, adults, and seniors.</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-none">
+        <!-- Card 1 -->
+        <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-lg transition transform hover:-translate-y-1">
+          <img src="https://pixabay.com/get/g9bbf839329569eb27b1db0e13c630789321dc49171075c2e3052091ec925630c461badad1cc64f7765e9e0e09802d6f6adcb1e30015f2410e45825db3a63e920_640.jpg" alt="Dog walking" class="w-full h-40 object-cover rounded-md">
+          <h4 class="mt-4 font-semibold">Dog Walking</h4>
+          <p class="text-gray-600 mt-2 text-sm">Daily walks, group or solo, GPS-tracked routes and photo updates.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-amber-500 font-semibold">From $20</span>
+            <button class="px-3 py-1 bg-amber-100 text-amber-700 rounded-md text-sm hover:bg-amber-200 transition">Book Walk</button>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-lg transition transform hover:-translate-y-1">
+          <img src="https://images.pexels.com/photos/19145894/pexels-photo-19145894.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Grooming" class="w-full h-40 object-cover rounded-md">
+          <h4 class="mt-4 font-semibold">Grooming</h4>
+          <p class="text-gray-600 mt-2 text-sm">Full-service spa: bath, trim, nail care and ear cleaning.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-amber-500 font-semibold">From $45</span>
+            <button class="px-3 py-1 bg-amber-100 text-amber-700 rounded-md text-sm hover:bg-amber-200 transition">Book Groom</button>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="p-6 bg-white rounded-lg shadow-sm hover:shadow-lg transition transform hover:-translate-y-1">
+          <img src="https://images.unsplash.com/photo-1621951704600-5c90140160b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxkb2clMjB0cmFpbmluZyUyMHNlc3Npb24lMjB3aXRoJTIwdHJhaW5lciUyMGFuZCUyMGF0dGVudGl2ZSUyMGRvZ3xlbnwwfDB8fHwxNzU1MjU0MzI4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Training" class="w-full h-40 object-cover rounded-md">
+          <h4 class="mt-4 font-semibold">Training & Behavior</h4>
+          <p class="text-gray-600 mt-2 text-sm">Positive reinforcement training for manners, recall, and socialization.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-amber-500 font-semibold">Packages from $80</span>
+            <button class="px-3 py-1 bg-amber-100 text-amber-700 rounded-md text-sm hover:bg-amber-200 transition">Schedule</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us (full width) -->
+    <section class="w-full max-w-none bg-white py-12 px-6 md:px-12 lg:px-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-semibold">Why PawCare?</h3>
+          <ul class="mt-4 space-y-4 text-gray-600">
+            <li class="flex items-start gap-3">
+              <div class="bg-amber-100 text-amber-600 p-2 rounded-full">✓</div>
+              <div>
+                <div class="font-semibold">Certified & insured caregivers</div>
+                <div class="text-sm">All staff are trained in pet CPR and behavior management.</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="bg-amber-100 text-amber-600 p-2 rounded-full">📸</div>
+              <div>
+                <div class="font-semibold">Daily photo & GPS updates</div>
+                <div class="text-sm">We share route maps and photos after each visit.</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="bg-amber-100 text-amber-600 p-2 rounded-full">🏡</div>
+              <div>
+                <div class="font-semibold">Home-like boarding</div>
+                <div class="text-sm">Private suites, enrichment toys, and social time.</div>
+              </div>
+            </li>
+          </ul>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="inline-block mt-6 px-5 py-3 bg-amber-500 text-white rounded-md hover:bg-amber-600 transition">Request a Quote</a>
+        </div>
+        <div class="rounded-lg overflow-hidden shadow-sm">
+          <img src="https://images.unsplash.com/photo-1750174541213-85bf5e30b1f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxjb3p5JTIwZG9nJTIwYm9hcmRpbmclMjByb29tJTIwd2l0aCUyMGJlZCUyMGFuZCUyMHRveXMlMkMlMjBob21lLWxpa2UlMjBpbnRlcmlvcnxlbnwwfDB8fHwxNzU1MjU0MzI5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Cozy boarding" class="w-full h-64 object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials slider (simple JS carousel) -->
+    <section class="w-full max-w-none px-6 md:px-12 lg:px-24 py-12 bg-gray-50">
+      <h3 class="text-2xl font-semibold">Happy Pet Parents</h3>
+      <div class="mt-6 relative">
+        <div id="testimonials" class="w-full overflow-hidden">
+          <div class="flex transition-transform duration-500" style="width:300%">
+            <div class="w-full flex-shrink-0 p-6 bg-white rounded-lg shadow-sm mr-6">
+              <p class="text-gray-700">"The team at PawCare saved our sanity — daily walks and grooming that make our pup shine. We love the photos!"</p>
+              <div class="mt-4 font-semibold">— Jess R., Luna's Mom</div>
+            </div>
+            <div class="w-full flex-shrink-0 p-6 bg-white rounded-lg shadow-sm mr-6">
+              <p class="text-gray-700">"Boarding felt like home. Our dog came back content and tired — exactly what we wanted."</p>
+              <div class="mt-4 font-semibold">— Marcus T.</div>
+            </div>
+            <div class="w-full flex-shrink-0 p-6 bg-white rounded-lg shadow-sm">
+              <p class="text-gray-700">"Professional trainers who actually care. Our recall improved in weeks."</p>
+              <div class="mt-4 font-semibold">— Priya S.</div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute right-4 top-1/2 -translate-y-1/2 flex gap-2">
+          <button id="prevTest" class="bg-white p-2 rounded-full shadow hover:scale-105 transition">◀</button>
+          <button id="nextTest" class="bg-white p-2 rounded-full shadow hover:scale-105 transition">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner (full width) -->
+    <section class="w-full max-w-none bg-amber-500 text-white py-12 px-6 md:px-12 lg:px-24">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div>
+          <h3 class="text-2xl md:text-3xl font-bold">Ready to give your dog the best care?</h3>
+          <p class="mt-2 text-sm md:text-base">Book a free meet-and-greet. Flexible scheduling and tailored plans.</p>
+        </div>
+        <div>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="px-6 py-3 bg-white text-amber-600 rounded-md font-semibold hover:brightness-95 transition">Schedule a Meet & Greet</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full max-w-none bg-white border-t mt-12">
+    <div class="w-full px-6 md:px-12 lg:px-24 py-8 flex flex-col md:flex-row items-start justify-between gap-6">
+      <div>
+        <h4 class="font-semibold">PawCare</h4>
+        <p class="text-sm text-gray-600 mt-2">Premium dog care services — walking, grooming, training, and boarding.</p>
+        <div class="mt-4 text-sm text-gray-500">© <span id="year"></span> PawCare. All rights reserved.</div>
+      </div>
+      <div class="flex gap-8">
+        <div>
+          <h5 class="font-semibold">Navigate</h5>
+          <ul class="mt-2 text-sm text-gray-600 space-y-1">
+            <li><a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="hover:text-amber-500 transition">Home</a></li>
+            <li><a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="hover:text-amber-500 transition">About</a></li>
+            <li><a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="hover:text-amber-500 transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold">Contact</h5>
+          <div class="mt-2 text-sm text-gray-600">hello@pawcare.example<br>+1 (555) 123-4567</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple testimonials carousel
+    (function(){
+      const track = document.querySelector('#testimonials > div');
+      const next = document.getElementById('nextTest');
+      const prev = document.getElementById('prevTest');
+      let index = 0;
+      const total = track.children[0].children.length; // 3
+
+      function update() {
+        const offset = -index * 100;
+        track.style.transform = `translateX(${offset}%)`;
+      }
+      next.addEventListener('click', ()=>{ index = (index + 1) % total; update(); });
+      prev.addEventListener('click', ()=>{ index = (index - 1 + total) % total; update(); });
+
+      // Auto-rotate
+      setInterval(()=>{ index = (index + 1) % total; update(); }, 6000);
+    })();
+  </script>
+</body>
+</html>

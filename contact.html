@@ -1,0 +1,170 @@
+<!--  -->
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:300,400,500,600,700&family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — PawCare</title>
+  <meta name="description" content="Contact PawCare to book services, ask questions, or schedule a meet-and-greet.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Poppins','sans-serif'], serif: ['Merriweather','serif'] }, keyframes: { fadeInUp: { '0%': { opacity: '0', transform: 'translateY(10px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } }, animation: { 'fade-in-up': 'fadeInUp 700ms ease-out both' } } } }
+  </script>
+  <style>body { font-family: Poppins, Helvetica, Arial, sans-serif; }</style>
+</head>
+<body style="font-family: 'Merriweather', sans-serif;" class="bg-gray-50 text-gray-800">
+  <header class="w-full max-w-none bg-white shadow-sm">
+    <div class="w-full px-4 py-4 flex items-center justify-between">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-amber-300 flex items-center justify-center text-white font-bold">PC</div>
+        <div class="hidden sm:block">
+          <h1 class="text-lg font-semibold">PawCare</h1>
+        </div>
+      </a>
+      <nav class="flex items-center gap-4">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-sm font-medium text-gray-700 hover:text-amber-500 transition">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-sm font-medium text-gray-700 hover:text-amber-500 transition">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-sm font-medium text-gray-700 hover:text-amber-500 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="w-full max-w-none px-6 md:px-12 lg:px-24 py-12">
+    <h2 class="text-2xl font-semibold">Get in Touch</h2>
+    <p class="text-gray-600 mt-2">Questions? Ready to book? Fill out the form or reach out using the contact details.</p>
+
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="md:col-span-2">
+        <form id="contactForm" class="w-full max-w-none bg-white p-6 rounded-lg shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm font-medium">Full name</label>
+              <input id="name" name="name" required class="mt-2 w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-200" placeholder="Your full name">
+            </div>
+            <div>
+              <label class="text-sm font-medium">Phone</label>
+              <input id="phone" name="phone" type="tel" required class="mt-2 w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-200" placeholder="(555) 555-5555">
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <label class="text-sm font-medium">Email</label>
+            <input id="email" name="email" type="email" required class="mt-2 w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-200" placeholder="you@example.com">
+          </div>
+
+          <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm font-medium">Service Interested In</label>
+              <select id="service" name="service" class="mt-2 w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-200">
+                <option>Dog Walking</option>
+                <option>Grooming</option>
+                <option>Training</option>
+                <option>Boarding</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-sm font-medium">Preferred Date</label>
+              <input id="date" name="date" type="date" class="mt-2 w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-200">
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <label class="text-sm font-medium">Message</label>
+            <textarea id="message" name="message" rows="4" class="mt-2 w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-amber-200" placeholder="Tell us about your dog, special needs, or anything else..."></textarea>
+          </div>
+
+          <div class="mt-6 flex items-center gap-4">
+            <button type="submit" class="px-5 py-2 bg-amber-500 text-white rounded-md font-semibold hover:shadow-lg transition">Send Message</button>
+            <div id="formStatus" class="text-sm text-gray-600"></div>
+          </div>
+        </form>
+      </div>
+
+      <aside class="p-6 bg-white rounded-lg shadow-sm">
+        <h4 class="font-semibold">Contact Info</h4>
+        <p class="mt-2 text-sm text-gray-600">hello@pawcare.example<br>+1 (555) 123-4567</p>
+        <div class="mt-4">
+          <h5 class="font-semibold">Hours</h5>
+          <p class="text-sm text-gray-600 mt-2">Mon–Fri: 7am–7pm<br>Sat: 8am–5pm<br>Sun: Closed</p>
+        </div>
+
+        <div class="mt-6">
+          <h5 class="font-semibold">Visit Us</h5>
+          <p class="text-sm text-gray-600 mt-2">123 Bark Street, Pawtown, USA</p>
+          <img src="https://images.pexels.com/photos/3776678/pexels-photo-3776678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Map placeholder" class="w-full h-36 object-cover rounded-md mt-3">
+        </div>
+
+        <div class="mt-6">
+          <h5 class="font-semibold">Follow Us</h5>
+          <div class="mt-2 flex gap-3">
+            <a href="#" class="p-2 bg-blue-500 text-white rounded-md text-sm">Facebook</a>
+            <a href="#" class="p-2 bg-pink-500 text-white rounded-md text-sm">Instagram</a>
+            <a href="#" class="p-2 bg-blue-400 text-white rounded-md text-sm">X</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="w-full max-w-none bg-white border-t mt-12">
+    <div class="w-full px-6 md:px-12 lg:px-24 py-8 flex flex-col md:flex-row items-start justify-between gap-6">
+      <div>
+        <h4 class="font-semibold">PawCare</h4>
+        <p class="text-sm text-gray-600 mt-2">We reply within 1 business day.</p>
+        <div class="mt-4 text-sm text-gray-500">© <span id="year-contact"></span> PawCare. All rights reserved.</div>
+      </div>
+      <div>
+        <h5 class="font-semibold">Navigate</h5>
+        <ul class="mt-2 text-sm text-gray-600 space-y-1">
+          <li><a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="hover:text-amber-500 transition">Home</a></li>
+          <li><a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="hover:text-amber-500 transition">About</a></li>
+          <li><a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="hover:text-amber-500 transition">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-contact').textContent = new Date().getFullYear();
+
+    // Simple client-side form handling & validation
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      status.textContent = '';
+
+      const data = {
+        name: form.name.value.trim(),
+        phone: form.phone.value.trim(),
+        email: form.email.value.trim(),
+        service: form.service.value,
+        date: form.date.value,
+        message: form.message.value.trim()
+      };
+
+      // Basic validation
+      if (!data.name || !data.email || !data.phone) {
+        status.textContent = 'Please fill name, phone, and email.';
+        status.className = 'text-sm text-red-600';
+        return;
+      }
+      // Fake submission (replace with real API in production)
+      status.className = 'text-sm text-gray-600';
+      status.textContent = 'Sending...';
+      setTimeout(() => {
+        status.className = 'text-sm text-green-600';
+        status.textContent = 'Thanks! We received your message. We will contact you within 1 business day.';
+        form.reset();
+      }, 1200);
+    });
+  </script>
+</body>
+</html>
